@@ -11,7 +11,7 @@ import org.springframework.context.annotation.ImportResource;
 public class ReportConfig {
 
     @Bean
-    public ServletRegistrationBean ureportServletRegistrationBean() {
+    public ServletRegistrationBean servletRegistrationBean() {
         return new ServletRegistrationBean(new UReportServlet(), "/ureport/*");// ServletName默认值为首字母小写，即myServlet
     }
 }
